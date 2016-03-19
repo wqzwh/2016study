@@ -1,0 +1,33 @@
+body,ul,li,div{margin:0;padding:0;}
+ul,li{list-style: none;}
+
+$height:270px;
+$width:800px;
+
+.wrap{
+	width:$width;
+	height: $height;
+	position: relative;
+	margin:0 auto;
+	overflow: hidden;
+}
+.gg_btn{overflow:hidden;cursor: pointer;
+	position:absolute;
+}
+.gg_left{
+	background: url(../img/btn_l.png) no-repeat center center;
+}
+.gg_right{
+	background: url(../img/btn_r.png) no-repeat center center;
+	right:0px;
+}
+.wrap ul{
+	width:$width;
+	height:$height;
+}
+.wrap ul li{
+	position: absolute;
+}
+.wrap ul li img{
+	//width:100%;
+}

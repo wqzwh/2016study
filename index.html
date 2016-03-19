@@ -2,11 +2,59 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>首页</title>
+	<title></title>
+	<link rel="stylesheet" href="css/css.css">
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/js.js"></script>
 </head>
 <body>
-	<h1>你好</h1>
-	<h2>我好</h2>
-	<h4>谁开的房间号</h4>
+	<div class="wrap" id="wrap" data-setting='{
+											"width":1000,
+										 	"heihgt":270,
+										 	"firstPicWidth":640,
+									 		"firstPicHeight":270,
+										 	"scale":0.9,
+										 	"speed":500,
+										 	"verticalAlign":"top"
+												}'>
+		<div class="gg_left gg_btn"></div>
+		<div class="gg_right gg_btn"></div>
+		<ul class="wrap_ul">
+			<li class="li_item"><a href=""><img src="img/1.jpg" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="img/2.jpg" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="img/3.jpg" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="img/4.jpg" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="img/5.jpg" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="img/1.jpg" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="img/2.jpg" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="img/3.jpg" width="100%" alt=""></a></li>
+			<li class="li_item"><a href=""><img src="img/4.jpg" width="100%" alt=""></a></li>
+		</ul>
+	</div>
+	<script>
+		$(function(){
+			//不想用new，防止太多引用就会使用过多的new，对性能会产生影响，所以把new的工作封装在函数里面操作
+			//var wrap=new Carrousel($('#wrap').eq(0));
+
+			/****第一种配置参数的方法 通过init传入配置参数***********/
+			// var setting={
+			// 	width:1000,
+			// 	heihgt:270,
+			// 	firstPicWidth:640,
+			// 	firstPicHeight:270,
+			// 	scale:0.9,
+			// 	speed:500,
+			// 	verticalAlign:'middle'
+			// };
+
+			// Carrousel.init($("#wrap"),setting);
+
+
+			/*******第二种配置参数的方法***
+				配置参数放在每个节点的属性里面，通过节点属性来设置自己需要的参数,需要json形式的字符串 一定要用双引号
+			**************/
+			Carrousel.init($('#wrap'));
+		})
+	</script>
 </body>
 </html>

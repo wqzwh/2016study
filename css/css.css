@@ -1,0 +1,34 @@
+body, ul, li, div {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+.wrap {
+  width: 800px;
+  height: 270px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.gg_btn {
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute; }
+
+.gg_left {
+  background: url(../img/btn_l.png) no-repeat center center; }
+
+.gg_right {
+  background: url(../img/btn_r.png) no-repeat center center;
+  right: 0px; }
+
+.wrap ul {
+  width: 800px;
+  height: 270px; }
+
+.wrap ul li {
+  position: absolute; }
+
+/*# sourceMappingURL=css.css.map */
