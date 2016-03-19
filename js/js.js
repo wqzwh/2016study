@@ -22,7 +22,7 @@
 
         this.flage = true;
 
-
+        //asa
         this.setting = {
             "width": 1000,            //幻灯片宽度
             "height": 270,            //幻灯片高度
